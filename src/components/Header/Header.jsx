@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 // import { FaRegUserCircle } from "react-icons/fa";
 
 const Header = () => {
@@ -13,14 +13,14 @@ const Header = () => {
                 </ul> */}
                 <span className="font-extrabold text-2xl flex justify-start text-[#008080]">Dreams BD</span>
                 <div className="justify-center items-center space-x-6 text-lg font-semibold py-4">
-                <Link className="hover:underline hover:text-blue-700" to="/">Home</Link>
-                <Link className="hover:underline hover:text-blue-700" to="/about">About</Link>
-                <Link className="hover:underline hover:text-blue-700" to="/contact">Contact</Link>
-                <Link className="hover:underline hover:text-blue-700" to="/services">Services</Link>
-                <Link className="hover:underline hover:text-blue-700" to='/post'>Posts</Link>
+                <NavLink to='/'>Home</NavLink>
+                <NavLink to="/users">Users</NavLink>
+                <NavLink to='/post'>Posts</NavLink>
+                <NavLink to='/about'>About</NavLink>
+                <NavLink  to='/contact'>Contact Us</NavLink>
                 </div>
                 
-                <span><Link className="hover:underline hover:text-blue-700" to="/users">Users</Link></span>
+                <span></span>
             </nav>
         </div>
     );
